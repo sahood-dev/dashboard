@@ -1,11 +1,15 @@
 import React from 'react'
-import { GridComponent,ColumnDirective,Resize,
-  Sort,ContextMenu,Filter,Page,ExcelExport,
-  PdfExport,Edit,Inject,ColumnsDirective} from
+import {
+  GridComponent, ColumnDirective, Resize,
+  Sort, ContextMenu, Filter, Page, ExcelExport,
+  PdfExport, Edit, Inject, ColumnsDirective
+} from
   "@syncfusion/ej2-react-grids"
 
-import { ordersData,contextMenuItems,
-  ordersGrid } from '../data/dummy'
+import {
+  ordersData, contextMenuItems,
+  ordersGrid
+} from '../data/dummy'
 import { Header } from '../components'
 const Orders = () => {
   return (
@@ -13,18 +17,18 @@ const Orders = () => {
     bg-white rounded-3xl' >
       <Header catogory="Page" title="Orders" />
       <GridComponent
-      id='gridcomp'
-      dataSource={ordersData}
-      allowPaging
-      allowSorting
+        id='gridcomp'
+        dataSource={ordersData}
+        allowPaging
+        allowSorting
       >
         <ColumnsDirective>
-          {ordersGrid.map((item,index) => {
-          return <ColumnDirective key={index} {...item} />
+          {ordersGrid.map((item, index) => {
+            return <ColumnDirective key={index} {...item} />
           })}
         </ColumnsDirective>
-        <Inject services={[Resize,Sort,ContextMenu,
-          Filter,Page,ExcelExport,Edit,PdfExport]} />
+        <Inject services={[Resize, Sort, ContextMenu,
+          Filter, Page, ExcelExport, Edit, PdfExport]} />
       </GridComponent>
     </div>
   )

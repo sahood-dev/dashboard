@@ -419,10 +419,10 @@ export const customersGrid = [
     format: 'yMd',
     textAlign: 'Center' },
 
-  { field: 'Location',
-    headerText: 'Location',
-    width: '150',
-    textAlign: 'Center' },
+  // { field: 'Location',
+  //   headerText: 'Location',
+  //   width: '150',
+  //   textAlign: 'Center' },
 
   { field: 'CustomerID',
     headerText: 'Customer ID',
@@ -491,19 +491,19 @@ export const links = [
         name: 'employees',
         icon: <IoMdContacts />,
       },
-      {
-        name: 'customers',
-        icon: <RiContactsLine />,
-      },
+      // {
+      //   name: 'customers',
+      //   icon: <RiContactsLine />,
+      // },
     ],
   },
   {
     title: 'Apps',
     links: [
-      {
-        name: 'calendar',
-        icon: <AiOutlineCalendar />,
-      },
+      // {
+      //   name: 'calendar',
+      //   icon: <AiOutlineCalendar />,
+      // },
       {
         name: 'kanban',
         icon: <BsKanban />,
@@ -530,10 +530,10 @@ export const links = [
         icon: <AiOutlineAreaChart />,
       },
 
-      {
-        name: 'bar',
-        icon: <AiOutlineBarChart />,
-      },
+      // {
+      //   name: 'bar',
+      //   icon: <AiOutlineBarChart />,
+      // },
       {
         name: 'pie',
         icon: <FiPieChart />,
@@ -542,18 +542,18 @@ export const links = [
         name: 'financial',
         icon: <RiStockLine />,
       },
-      {
-        name: 'color-mapping',
-        icon: <BsBarChart />,
-      },
+      // {
+      //   name: 'color-mapping',
+      //   icon: <BsBarChart />,
+      // },
       {
         name: 'pyramid',
         icon: <GiLouvrePyramid />,
       },
-      {
-        name: 'stacked',
-        icon: <AiOutlineBarChart />,
-      },
+      // {
+      //   name: 'stacked',
+      //   icon: <AiOutlineBarChart />,
+      // },
     ],
   },
 ];
@@ -911,12 +911,12 @@ export const ordersGrid = [
     textAlign: 'Center',
   },
 
-  {
-    field: 'Location',
-    headerText: 'Location',
-    width: '150',
-    textAlign: 'Center',
-  },
+  // {
+  //   field: 'Location',
+  //   headerText: 'Location',
+  //   width: '150',
+  //   textAlign: 'Center',
+  // },
 ];
 
 export const customersData = [
@@ -3171,8 +3171,18 @@ export const stackedChartData = [
     { x: 'Apr', y: 159.9 },
     { x: 'May', y: 159.9 },
     { x: 'Jun', y: 159.9 },
-    { x: 'July', y: 159.9 },
+    { x: 'July',y: 159.9 },
   ],
+];
+export const stackedChartData1 = [
+    { overs: 1, runs: 7,  },{ overs: 2, runs: 7,  },
+    { overs: 3, runs: 11, },{ overs: 4, runs: 8,  },
+    { overs: 5, runs: 24, }, 
+];
+export const stackedChartData2 = [
+    { overs: 1, runs: 4,  }, { overs: 2, runs: 3,  },
+    { overs: 3, runs: 18,  },{ overs: 4, runs: 15,  },
+    { overs: 5, runs: 21,  }, 
 ];
 
 export const stackedCustomSeries = [
@@ -3181,8 +3191,8 @@ export const stackedCustomSeries = [
     xName: 'x',
     yName: 'y',
     name: 'Budget',
-    type: 'StackingColumn',
-    background: 'blue',
+    type:'Column' ,
+    // background: 'blue',
 
   },
 
@@ -3190,8 +3200,8 @@ export const stackedCustomSeries = [
     xName: 'x',
     yName: 'y',
     name: 'Expense',
-    type: 'StackingColumn',
-    background: 'red',
+    type:'Column' ,
+    // background: 'red',
 
   },
 
@@ -5871,3 +5881,974 @@ export const PyramidData = [
   { x: 'Fruits', y: 520, text: '520 cal' },
   { x: 'Bread, Rice, Pasta', y: 930, text: '930 cal' },
 ];
+
+
+export const barChartData1 = [
+  { overs: 16, runs: 46,  },{ overs: 17, runs: 27,  },
+  { overs: 18, runs: 28, }, 
+];
+export const barChartData2 = [
+  { overs: 16, runs: 37,  }, { overs: 17, runs: 23,  },
+  { overs: 18, runs: 18,  }, 
+];
+export const barChartData3 = [
+  { overs: 16, runs: 38,  }, { overs: 17, runs: 27,  },
+  { overs: 18, runs: 26,  }, 
+];
+
+export const PieData = [
+  {name:"Chrome", value:37, text:"37%" },
+  {name:"UC Browser", value:17, text:"17%" },
+  {name:"iPhone", value:19, text:"19%" },
+  {name:"Others", value:4, text:"4%" },
+  {name:"OPera", value:11, text:"11%" },
+  {name:"Android", value:12, text:"12%" },
+]
+
+export const finacialChartData = [
+  {
+      date: new Date( '2012-04-02' ),
+      open : 85.9757,
+      high : 90.6657,
+      low : 85.7685,
+      close : 90.5257,
+      volume : 660187068
+    },
+    {
+      date: new Date( '2012-04-09' ),
+      open : 89.4471,
+      high : 92,
+      low : 86.2157,
+      close : 86.4614,
+      volume : 912634864
+    },
+    {
+      date: new Date( '2012-04-16' ),
+      open : 87.1514,
+      high : 88.6071,
+      low : 81.4885,
+      close : 81.8543,
+      volume : 1221746066
+    },
+    {
+      date: new Date( '2012-04-23' ),
+      open : 81.5157,
+      high : 88.2857,
+      low : 79.2857,
+      close : 86.1428,
+      volume : 965935749
+    },
+    {
+      date: new Date( '2012-04-30' ),
+      open : 85.4,
+      high : 85.4857,
+      low : 80.7385,
+      close : 80.75,
+      volume : 615249365
+    },
+    {
+      date: new Date( '2012-05-07' ),
+      open : 80.2143,
+      high : 82.2685,
+      low : 79.8185,
+      close : 80.9585,
+      volume : 541742692
+    },
+    {
+      date: new Date( '2012-05-14' ),
+      open : 80.3671,
+      high : 81.0728,
+      low : 74.5971,
+      close : 75.7685,
+      volume : 708126233
+    },
+    {
+      date: new Date( '2012-05-21' ),
+      open : 76.3571,
+      high : 82.3571,
+      low : 76.2928,
+      close : 80.3271,
+      volume : 682076215
+    },
+    {
+      date: new Date( '2012-05-28' ),
+      open : 81.5571,
+      high : 83.0714,
+      low : 80.0743,
+      close : 80.1414,
+      volume : 480059584
+    },
+    {
+      date: new Date( '2012-06-04' ),
+      open : 80.2143,
+      high : 82.9405,
+      low : 78.3571,
+      close : 82.9028,
+      volume : 517577005
+    },
+    {
+      date: new Date( '2012-06-11' ),
+      open : 83.96,
+      high : 84.0714,
+      low : 80.9571,
+      close : 82.0185,
+      volume : 499693120
+    },
+    {
+      date: new Date( '2012-06-18' ),
+      open : 81.5657,
+      high : 84.2857,
+      low : 81.4814,
+      close : 83.1571,
+      volume : 442172142
+    },
+    {
+      date: new Date( '2012-06-25' ),
+      open : 82.4714,
+      high : 83.4285,
+      low : 80.8014,
+      close : 83.4285,
+      volume : 371529102
+    },
+    {
+      date: new Date( '2012-07-02' ),
+      open : 83.5328,
+      high : 87.7628,
+      low : 83.3714,
+      close : 86.5543,
+      volume : 385906790
+    },
+    {
+      date: new Date( '2012-07-09' ),
+      open : 86.4714,
+      high : 88.5528,
+      low : 84.6685,
+      close : 86.4243,
+      volume : 524235196
+    },
+    {
+      date: new Date( '2012-07-16' ),
+      open : 86.4457,
+      high : 87.9071,
+      low : 86.1643,
+      close : 86.3285,
+      volume : 419537217
+    },
+    {
+      date: new Date( '2012-07-23' ),
+      open : 84.9143,
+      high : 87.0971,
+      low : 81.4285,
+      close : 83.5943,
+      volume : 680773023
+    },
+    {
+      date: new Date( '2012-07-30' ),
+      open : 84.4171,
+      high : 88.2828,
+      low : 83.9743,
+      close : 87.9571,
+      volume : 475109323
+    },
+    {
+      date: new Date( '2012-08-06' ),
+      open : 88.1843,
+      high : 89.2857,
+      low : 87.8943,
+      close : 88.8143,
+      volume : 312826308
+    },
+    {
+      date: new Date( '2012-08-13' ),
+      open : 89.0557,
+      high : 92.5985,
+      low : 89.0357,
+      close : 92.5871,
+      volume : 392867193
+    },
+    {
+      date: new Date( '2012-08-20' ),
+      open : 92.8585,
+      high : 96.4114,
+      low : 92.5871,
+      close : 94.746,
+      volume : 708614692
+    },
+    {
+      date: new Date( '2012-08-27' ),
+      open : 97.1414,
+      high : 97.2671,
+      low : 93.8928,
+      close : 95.0343,
+      volume : 383807217
+    },
+    {
+      date: new Date( '2012-09-03' ),
+      open : 95.1085,
+      high : 97.4971,
+      low : 94.9285,
+      close : 97.2057,
+      volume : 355722047
+    },
+    {
+      date: new Date( '2012-09-10' ),
+      open : 97.2071,
+      high : 99.5685,
+      low : 93.7143,
+      close : 98.7543,
+      volume : 724042207
+    },
+    {
+      date: new Date( '2012-09-17' ),
+      open : 99.9071,
+      high : 100.7243,
+      low : 99.0885,
+      close : 100.0135,
+      volume : 500166040
+    },
+    {
+      date: new Date( '2012-09-24' ),
+      open : 98.1228,
+      high : 99.3028,
+      low : 94.3357,
+      close : 95.3007,
+      volume : 714507994
+    },
+    {
+      date: new Date( '2012-10-01' ),
+      open : 95.88,
+      high : 96.6785,
+      low : 92.95,
+      close : 93.2271,
+      volume : 638543622
+    },
+    {
+      date: new Date( '2012-10-08' ),
+      open : 92.4114,
+      high : 92.5085,
+      low : 89.0785,
+      close : 89.9591,
+      volume : 747127724
+    },
+    {
+      date: new Date( '2012-10-15' ),
+      open : 90.3357,
+      high : 93.2557,
+      low : 87.0885,
+      close : 87.12,
+      volume : 646996264
+    },
+    {
+      date: new Date( '2012-10-22' ),
+      open : 87.4885,
+      high : 90.7685,
+      low : 84.4285,
+      close : 86.2857,
+      volume : 866040680
+    },
+    {
+      date: new Date( '2012-10-29' ),
+      open : 84.9828,
+      high : 86.1428,
+      low : 82.1071,
+      close : 82.4,
+      volume : 367371310
+    },
+    {
+      date: new Date( '2012-11-05' ),
+      open : 83.3593,
+      high : 84.3914,
+      low : 76.2457,
+      close : 78.1514,
+      volume : 919719846
+    },
+    {
+      date: new Date( '2012-11-12' ),
+      open : 79.1643,
+      high : 79.2143,
+      low : 72.25,
+      close : 75.3825,
+      volume : 894382149
+    },
+    {
+      date: new Date( '2012-11-19' ),
+      open : 77.2443,
+      high : 81.7143,
+      low : 77.1257,
+      close : 81.6428,
+      volume : 527416747
+    },
+    {
+      date: new Date( '2012-11-26' ),
+      open : 82.2714,
+      high : 84.8928,
+      low : 81.7514,
+      close : 83.6114,
+      volume : 646467974
+    },
+    {
+      date: new Date( '2012-12-03' ),
+      open : 84.8071,
+      high : 84.9414,
+      low : 74.09,
+      close : 76.1785,
+      volume : 980096264
+    },
+    {
+      date: new Date( '2012-12-10' ),
+      open : 75,
+      high : 78.5085,
+      low : 72.2257,
+      close : 72.8277,
+      volume : 835016110
+    },
+    {
+      date: new Date( '2012-12-17' ),
+      open : 72.7043,
+      high : 76.4143,
+      low : 71.6043,
+      close : 74.19,
+      volume : 726150329
+    },
+    {
+      date: new Date( '2012-12-24' ),
+      open : 74.3357,
+      high : 74.8928,
+      low : 72.0943,
+      close : 72.7984,
+      volume : 321104733
+    },
+    {
+      date: new Date( '2012-12-31' ),
+      open : 72.9328,
+      high : 79.2857,
+      low : 72.7143,
+      close : 75.2857,
+      volume : 540854882
+    },
+    {
+      date: new Date( '2013-01-07' ),
+      open : 74.5714,
+      high : 75.9843,
+      low : 73.6,
+      close : 74.3285,
+      volume : 574594262
+    },
+    {
+      date: new Date( '2013-01-14' ),
+      open : 71.8114,
+      high : 72.9643,
+      low : 69.0543,
+      close : 71.4285,
+      volume : 803105621
+    },
+    {
+      date: new Date( '2013-01-21' ),
+      open : 72.08,
+      high : 73.57,
+      low : 62.1428,
+      close : 62.84,
+      volume : 971912560
+    },
+    {
+      date: new Date( '2013-01-28' ),
+      open : 62.5464,
+      high : 66.0857,
+      low : 62.2657,
+      close : 64.8028,
+      volume : 656549587
+    },
+    {
+      date: new Date( '2013-02-04' ),
+      open : 64.8443,
+      high : 68.4014,
+      low : 63.1428,
+      close : 67.8543,
+      volume : 743778993
+    },
+    {
+      date: new Date( '2013-02-11' ),
+      open : 68.0714,
+      high : 69.2771,
+      low : 65.7028,
+      close : 65.7371,
+      volume : 585292366
+    },
+    {
+      date: new Date( '2013-02-18' ),
+      open : 65.8714,
+      high : 66.1043,
+      low : 63.26,
+      close : 64.4014,
+      volume : 421766997
+    },
+    {
+      date: new Date( '2013-02-25' ),
+      open : 64.8357,
+      high : 65.0171,
+      low : 61.4257,
+      close : 61.4957,
+      volume : 582741215
+    },
+    {
+      date: new Date( '2013-03-04' ),
+      open : 61.1143,
+      high : 62.2043,
+      low : 59.8571,
+      close : 61.6743,
+      volume : 632856539
+    },
+    {
+      date: new Date( '2013-03-11' ),
+      open : 61.3928,
+      high : 63.4614,
+      low : 60.7343,
+      close : 63.38,
+      volume : 572066981
+    },
+    {
+      date: new Date( '2013-03-18' ),
+      open : 63.0643,
+      high : 66.0143,
+      low : 63.0286,
+      close : 65.9871,
+      volume : 552156035
+    },
+    {
+      date: new Date( '2013-03-25' ),
+      open : 66.3843,
+      high : 67.1357,
+      low : 63.0886,
+      close : 63.2371,
+      volume : 390762517
+    },
+    {
+      date: new Date( '2013-04-01' ),
+      open : 63.1286,
+      high : 63.3854,
+      low : 59.9543,
+      close : 60.4571,
+      volume : 505273732
+    },
+    {
+      date: new Date( '2013-04-08' ),
+      open : 60.6928,
+      high : 62.57,
+      low : 60.3557,
+      close : 61.4,
+      volume : 387323550
+    },
+    {
+      date: new Date( '2013-04-15' ),
+      open : 61,
+      high : 61.1271,
+      low : 55.0143,
+      close : 55.79,
+      volume : 709945604
+    },
+    {
+      date: new Date( '2013-04-22' ),
+      open : 56.0914,
+      high : 59.8241,
+      low : 55.8964,
+      close : 59.6007,
+      volume : 787007506
+    },
+    {
+      date: new Date( '2013-04-29' ),
+      open : 60.0643,
+      high : 64.7471,
+      low : 60,
+      close : 64.2828,
+      volume : 655020017
+    },
+    {
+      date: new Date( '2013-05-06' ),
+      open : 65.1014,
+      high : 66.5357,
+      low : 64.3543,
+      close : 64.71,
+      volume : 545488533
+    },
+    {
+      date: new Date( '2013-05-13' ),
+      open : 64.5014,
+      high : 65.4143,
+      low : 59.8428,
+      close : 61.8943,
+      volume : 633706550
+    },
+    {
+      date: new Date( '2013-05-20' ),
+      open : 61.7014,
+      high : 64.05,
+      low : 61.4428,
+      close : 63.5928,
+      volume : 494379068
+    },
+    {
+      date: new Date( '2013-05-27' ),
+      open : 64.2714,
+      high : 65.3,
+      low : 62.7714,
+      close : 64.2478,
+      volume : 362907830
+    },
+    {
+      date: new Date( '2013-06-03' ),
+      open : 64.39,
+      high : 64.9186,
+      low : 61.8243,
+      close : 63.1158,
+      volume : 443249793
+    },
+    {
+      date: new Date( '2013-06-10' ),
+      open : 63.5328,
+      high : 64.1541,
+      low : 61.2143,
+      close : 61.4357,
+      volume : 389680092
+    },
+    {
+      date: new Date( '2013-06-17' ),
+      open : 61.6343,
+      high : 62.2428,
+      low : 58.3,
+      close : 59.0714,
+      volume : 400384818
+    },
+    {
+      date: new Date( '2013-06-24' ),
+      open : 58.2,
+      high : 58.38,
+      low : 55.5528,
+      close : 56.6471,
+      volume : 519314826
+    },
+    {
+      date: new Date( '2013-07-01' ),
+      open : 57.5271,
+      high : 60.47,
+      low : 57.3171,
+      close : 59.6314,
+      volume : 343878841
+    },
+    {
+      date: new Date( '2013-07-08' ),
+      open : 60.0157,
+      high : 61.3986,
+      low : 58.6257,
+      close : 60.93,
+      volume : 384106977
+    },
+    {
+      date: new Date( '2013-07-15' ),
+      open : 60.7157,
+      high : 62.1243,
+      low : 60.5957,
+      close : 60.7071,
+      volume : 286035513
+    },
+    {
+      date: new Date( '2013-07-22' ),
+      open : 61.3514,
+      high : 63.5128,
+      low : 59.8157,
+      close : 62.9986,
+      volume : 395816827
+    },
+    {
+      date: new Date( '2013-07-29' ),
+      open : 62.9714,
+      high : 66.1214,
+      low : 62.8857,
+      close : 66.0771,
+      volume : 339668858
+    },
+    {
+      date: new Date( '2013-08-05' ),
+      open : 66.3843,
+      high : 67.4128,
+      low : 64.8071,
+      close : 64.9214,
+      volume : 368486781
+    },
+    {
+      date: new Date( '2013-08-12' ),
+      open : 65.2657,
+      high : 72.0357,
+      low : 65.2328,
+      close : 71.7614,
+      volume : 711563584
+    },
+    {
+      date: new Date( '2013-08-19' ),
+      open : 72.0485,
+      high : 73.3914,
+      low : 71.1714,
+      close : 71.5743,
+      volume : 417119660
+    },
+    {
+      date: new Date( '2013-08-26' ),
+      open : 71.5357,
+      high : 72.8857,
+      low : 69.4286,
+      close : 69.6023,
+      volume : 392805888
+    },
+    {
+      date: new Date( '2013-09-02' ),
+      open : 70.4428,
+      high : 71.7485,
+      low : 69.6214,
+      close : 71.1743,
+      volume : 317244380
+    },
+    {
+      date: new Date( '2013-09-09' ),
+      open : 72.1428,
+      high : 72.56,
+      low : 66.3857,
+      close : 66.4143,
+      volume : 669376320
+    },
+    {
+      date: new Date( '2013-09-16' ),
+      open : 65.8571,
+      high : 68.3643,
+      low : 63.8886,
+      close : 66.7728,
+      volume : 625142677
+    },
+    {
+      date: new Date( '2013-09-23' ),
+      open : 70.8714,
+      high : 70.9871,
+      low : 68.6743,
+      close : 68.9643,
+      volume : 475274537
+    },
+    {
+      date: new Date( '2013-09-30' ),
+      open : 68.1786,
+      high : 70.3357,
+      low : 67.773,
+      close : 69.0043,
+      volume : 368198906
+    },
+    {
+      date: new Date( '2013-10-07' ),
+      open : 69.5086,
+      high : 70.5486,
+      low : 68.3257,
+      close : 70.4017,
+      volume : 361437661
+    },
+    {
+      date: new Date( '2013-10-14' ),
+      open : 69.9757,
+      high : 72.7514,
+      low : 69.9071,
+      close : 72.6985,
+      volume : 342694379
+    },
+    {
+      date: new Date( '2013-10-21' ),
+      open : 73.11,
+      high : 76.1757,
+      low : 72.5757,
+      close : 75.1368,
+      volume : 490458997
+    },
+    {
+      date: new Date( '2013-10-28' ),
+      open : 75.5771,
+      high : 77.0357,
+      low : 73.5057,
+      close : 74.29,
+      volume : 508130174
+    },
+    {
+      date: new Date( '2013-11-04' ),
+      open : 74.4428,
+      high : 75.555,
+      low : 73.1971,
+      close : 74.3657,
+      volume : 318132218
+    },
+    {
+      date: new Date( '2013-11-11' ),
+      open : 74.2843,
+      high : 75.6114,
+      low : 73.4871,
+      close : 74.9987,
+      volume : 306711021
+    },
+    {
+      date: new Date( '2013-11-18' ),
+      open : 74.9985,
+      high : 75.3128,
+      low : 73.3814,
+      close : 74.2571,
+      volume : 282778778
+    },
+    {
+      date: new Date( '2013-11-25' ),
+      open : 74.4314,
+      high : 79.7614,
+      low : 74.4285,
+      close : 79.4385,
+      volume : 327405302
+    },
+    {
+      date: new Date( '2013-12-02' ),
+      open : 79.7143,
+      high : 82.1622,
+      low : 78.6885,
+      close : 80.0028,
+      volume : 522055676
+    },
+    {
+      date: new Date( '2013-12-09' ),
+      open : 80.1286,
+      high : 81.5671,
+      low : 79.0957,
+      close : 79.2043,
+      volume : 387271099
+    },
+    {
+      date: new Date( '2013-12-16' ),
+      open : 79.2885,
+      high : 80.377,
+      low : 76.9714,
+      close : 78.4314,
+      volume : 457580848
+    },
+    {
+      date: new Date( '2013-12-23' ),
+      open : 81.1428,
+      high : 81.6971,
+      low : 79.9285,
+      close : 80.0128,
+      volume : 274253503
+    },
+    {
+      date: new Date( '2013-12-30' ),
+      open : 79.6371,
+      high : 80.1828,
+      low : 77.2043,
+      close : 77.2828,
+      volume : 275734934
+    },
+    {
+      date: new Date( '2014-01-06' ),
+      open : 76.7785,
+      high : 78.1228,
+      low : 75.8728,
+      close : 76.1343,
+      volume : 393462075
+    },
+    {
+      date: new Date( '2014-01-13' ),
+      open : 75.7014,
+      high : 80.0285,
+      low : 75.6971,
+      close : 77.2385,
+      volume : 439557459
+    },
+    {
+      date: new Date( '2014-01-20' ),
+      open : 77.2843,
+      high : 79.6128,
+      low : 77.2028,
+      close : 78.01,
+      volume : 385585525
+    },
+    {
+      date: new Date( '2014-01-27' ),
+      open : 78.5814,
+      high : 79.2571,
+      low : 70.5071,
+      close : 71.5143,
+      volume : 813702575
+    },
+    {
+      date: new Date( '2014-02-03' ),
+      open : 71.8014,
+      high : 74.7042,
+      low : 71.3286,
+      close : 74.24,
+      volume : 434447570
+    },
+    {
+      date: new Date( '2014-02-10' ),
+      open : 74.0943,
+      high : 77.9971,
+      low : 74,
+      close : 77.7128,
+      volume : 379011880
+    },
+    {
+      date: new Date( '2014-02-17' ),
+      open : 78,
+      high : 78.7414,
+      low : 74.9428,
+      close : 75.0357,
+      volume : 289609443
+    },
+    {
+      date: new Date( '2014-02-24' ),
+      open : 74.7357,
+      high : 76.1071,
+      low : 73.6571,
+      close : 75.1771,
+      volume : 367569649
+    },
+    {
+      date: new Date( '2014-03-03' ),
+      open : 74.7743,
+      high : 76.3928,
+      low : 74.6871,
+      close : 75.7771,
+      volume : 275972640
+    },
+    {
+      date: new Date( '2014-03-10' ),
+      open : 75.48,
+      high : 77.0943,
+      low : 74.7143,
+      close : 74.9557,
+      volume : 287729528
+    },
+    {
+      date: new Date( '2014-03-17' ),
+      open : 75.3857,
+      high : 76.6057,
+      low : 75.0286,
+      close : 76.1243,
+      volume : 303531061
+    },
+    {
+      date: new Date( '2014-03-24' ),
+      open : 76.9171,
+      high : 78.4285,
+      low : 76.3214,
+      close : 76.6943,
+      volume : 338387221
+    },
+    {
+      date: new Date( '2014-03-31' ),
+      open : 77.0328,
+      high : 77.64,
+      low : 75.7971,
+      close : 75.9743,
+      volume : 245749459
+    },
+    {
+      date: new Date( '2014-04-07' ),
+      open : 75.4314,
+      high : 76.0343,
+      low : 73.8771,
+      close : 74.23,
+      volume : 312008139
+    },
+    {
+      date: new Date( '2014-04-14' ),
+      open : 74.5571,
+      high : 75.3943,
+      low : 73.0471,
+      close : 74.9914,
+      volume : 241209047
+    },
+    {
+      date: new Date( '2014-04-21' ),
+      open : 75.0485,
+      high : 81.7128,
+      low : 74.8514,
+      close : 81.7057,
+      volume : 476651465
+    },
+    {
+      date: new Date( '2014-04-28' ),
+      open : 81.8285,
+      high : 85.6328,
+      low : 81.7928,
+      close : 84.6543,
+      volume : 473712709
+    },
+    {
+      date: new Date( '2014-05-05' ),
+      open : 84.3057,
+      high : 86.3442,
+      low : 82.9043,
+      close : 83.6489,
+      volume : 365535013
+    },
+    {
+      date: new Date( '2014-05-12' ),
+      open : 83.9271,
+      high : 85.3614,
+      low : 83.6285,
+      close : 85.3585,
+      volume : 260931637
+    },
+    {
+      date: new Date( '2014-05-19' ),
+      open : 85.4071,
+      high : 87.8184,
+      low : 85.3328,
+      close : 87.7328,
+      volume : 294298274
+    },
+    {
+      date: new Date( '2014-05-26' ),
+      open : 87.9828,
+      high : 92.0243,
+      low : 87.9471,
+      close : 90.4285,
+      volume : 400232120
+    },
+    {
+      date: new Date( '2014-06-02' ),
+      open : 90.5657,
+      high : 93.0371,
+      low : 88.9285,
+      close : 92.2243,
+      volume : 412158024
+    },
+    {
+      date: new Date( '2014-06-09' ),
+      open : 92.7,
+      high : 95.05,
+      low : 90.88,
+      close : 91.28,
+      volume : 292422550
+    },
+    {
+      date: new Date( '2014-06-16' ),
+      open : 91.51,
+      high : 92.75,
+      low : 90.9,
+      close : 90.91,
+      volume : 234325480
+    },
+    {
+      date: new Date( '2014-06-23' ),
+      open : 91.32,
+      high : 92,
+      low : 89.65,
+      close : 91.98,
+      volume : 213712160
+    },
+    {
+      date: new Date( '2014-06-30' ),
+      open : 92.1,
+      high : 94.1,
+      low : 92.09,
+      close : 94.03,
+      volume : 138936570
+    },
+    
+    ];

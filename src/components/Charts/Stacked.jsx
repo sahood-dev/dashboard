@@ -1,30 +1,41 @@
 import React from 'react'
 import { ChartComponent, SeriesCollectionDirective,
   SeriesDirective,Inject,Legend,Category,
-  StackingColumnSeries,Tooltip, StackingAreaSeries } from
+  StackingColumnSeries,Tooltip, ColumnSeries } from
    '@syncfusion/ej2-react-charts'
 
 import { stackedCustomSeries,stackedPrimaryXAxis,
-  stackedPrimaryYAxis } from '../../data/dummy'
+  stackedPrimaryYAxis,stackedChartData1,stackedChartData2} from '../../data/dummy'
 
 const Stacked = ({width,height}) => {
   return (
     <ChartComponent 
     width={width}
     height={height}
-    id="stack chart"
-    stackedPrimaryXAxis={stackedPrimaryXAxis}
-    stackedPrimaryYAxis={stackedPrimaryYAxis}
+    primaryXAxis={{valueType:"Double"}}
     chartArea={{border:{width:0}}}
-    tooltip={{enable:true}}
-    legendSettings={{background:"white"}}
+    title="Budget"
+    legendSettings={{visible:true}}
     >
-      <Inject services={[Legend, Category,
-        StackingColumnSeries,Tooltip]} />
+      <Inject services={[Legend,ColumnSeries]} />
         <SeriesCollectionDirective>
-          {stackedCustomSeries.map((item,index) => {
+          {/* {stackedCustomSeries.map((item,index) => {
           return <SeriesDirective key={index} {...item} />
-})}
+})} */}
+          <SeriesDirective
+          type='Column' 
+          xName='overs'
+          yName='runs'
+          name='Expenses'
+          dataSource={stackedChartData1} >
+          </SeriesDirective>
+          <SeriesDirective
+          type='Column' 
+          xName='overs'
+          yName='runs'
+          name='Income'
+          dataSource={stackedChartData2} >
+          </SeriesDirective>
         </SeriesCollectionDirective>
     </ChartComponent>
   )

@@ -1,0 +1,10 @@
+.e-menu-wrapper .e-ul .e-menu-item.e-focused {  
+    background-color: transparent;  
+  }  
+  .e-menu-wrapper.e-hamburger .e-popup.e-menu-popup {  
+    background-color: transparent;  
+  }  
+  .e-menu-wrapper ul .e-menu-item.e-selected {  
+    background-color: transparent;  
+    border: 1px solid;  
+  } 
