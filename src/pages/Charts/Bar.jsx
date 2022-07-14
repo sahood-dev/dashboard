@@ -3,7 +3,6 @@ import {ChartComponent,Inject,
   SeriesDirective,SeriesCollectionDirective
   ,Legend,ColumnSeries}
    from "@syncfusion/ej2-react-charts"
-import "./Bar.css"
 import {barChartData2,barChartData1,barChartData3} from "../../data/dummy"
 const Bar = () => {
   return (
