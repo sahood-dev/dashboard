@@ -6,7 +6,7 @@ import { RiNotification3Line} from 'react-icons/ri'
 import { MdKeyboardArrowDown} from 'react-icons/md'
 import { TooltipComponent } from '@syncfusion/ej2-react-popups'
 import avatar from '../data/avatar.jpg';
-import { Chat,Cart,Notification,UserProfile } from '.'
+// import { Chat,Cart,Notification,UserProfile } from '.'
 import {useStateContext} from '../context/ContextProvider'
 const NavButton = ({ title,customFunc,icon,color,dotcolor }) =>
   (<TooltipComponent content={title} 

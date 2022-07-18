@@ -3,7 +3,7 @@ import React from 'react'
 import { Header } from '../components'
 import { EditorData } from '../data/dummy'
 
-import {HtmlEditor,Image,Inject,Link,QuickToolbar,
+import {HtmlEditor,Image,Link,QuickToolbar,
 RichTextEditorComponent,Toolbar} from
 '@syncfusion/ej2-react-richtexteditor'
 RichTextEditorComponent.Inject(Toolbar, Link, HtmlEditor, Image, QuickToolbar); 

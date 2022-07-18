@@ -1,11 +1,11 @@
 import React from 'react'
 import {MdOutlineCancel} from 'react-icons/md'
 import {BsCheck} from 'react-icons/bs'
-import { Toolti, TooltipComponent } from "@syncfusion/ej2-react-popups"
+import {  TooltipComponent } from "@syncfusion/ej2-react-popups"
 
 import { themeColors } from '../data/dummy'
 import { useStateContext } from '../context/ContextProvider'
-import { BiBorderRadius } from 'react-icons/bi'
+// import { BiBorderRadius } from 'react-icons/bi'
 
 const ThemeSettings = () => {
   const {currentColor,currentMode,

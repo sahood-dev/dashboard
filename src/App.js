@@ -1,13 +1,13 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { FiSettings } from 'react-icons/fi'
 import { TooltipComponent } from '@syncfusion/ej2-react-popups'
 
 import './App.css'
-import { Navbar, Footer, Sidebar, ThemeSettings } from './components'
+import { Navbar, Sidebar, ThemeSettings } from './components'
 import {
-    Ecommerce, Orders, Calendar, Employees, Stacked, Pyramid,
-    Customers, Kanban, Area, Bar, Pie, Financial, ColorMapping,
+    Ecommerce, Orders, Calendar, Employees, Stacked, Pyramid
+    , Kanban, Area, Bar, Pie, Financial, ColorMapping,
     ColorPicker, Editor,Line
 } from './pages'
 import { useStateContext } from './context/ContextProvider'

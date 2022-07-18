@@ -3,12 +3,11 @@ import {ColorPickerComponent} from
 "@syncfusion/ej2-react-inputs"
 
 import { Header } from '../components'
-import { getStateEventArgument } from '@syncfusion/ej2-react-grids'
+// import { getStateEventArgument } from '@syncfusion/ej2-react-grids'
 
 const ColorPicker = () => {
   const change = (args) => {
-    document.getElementById('preview').style.
-    backgroundColor = args.currentValue.hex;
+    document.getElementById('preview').style.backgroundColor = args.currentValue.hex;
   }
   return (
     <div className='m-2 md:m-10 mt-24 p-2 

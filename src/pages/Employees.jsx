@@ -3,7 +3,7 @@ import { GridComponent,ColumnDirective,Page,
   Search,Toolbar,Inject,ColumnsDirective} from
   "@syncfusion/ej2-react-grids"
 
-import { employeesData,contextMenuItems,
+import { employeesData,
   employeesGrid } from '../data/dummy'
 import { Header } from '../components'
 const Employees = () => {

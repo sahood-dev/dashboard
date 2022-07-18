@@ -1,11 +1,10 @@
 import React from 'react'
 import { ChartComponent, SeriesCollectionDirective,
-  SeriesDirective,Inject,Legend,Category,
-  StackingColumnSeries,Tooltip, ColumnSeries } from
+  SeriesDirective,Inject,Legend
+  , ColumnSeries } from
    '@syncfusion/ej2-react-charts'
 
-import { stackedCustomSeries,stackedPrimaryXAxis,
-  stackedPrimaryYAxis,stackedChartData1,stackedChartData2} from '../../data/dummy'
+import {stackedChartData1,stackedChartData2} from '../../data/dummy'
 
 const Stacked = ({width,height}) => {
   return (

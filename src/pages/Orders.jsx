@@ -7,7 +7,7 @@ import {
   "@syncfusion/ej2-react-grids"
 
 import {
-  ordersData, contextMenuItems,
+  ordersData,
   ordersGrid
 } from '../data/dummy'
 import { Header } from '../components'
