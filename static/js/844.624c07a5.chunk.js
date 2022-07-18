@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkproject_syncfusion_dashboard=self.webpackChunkproject_syncfusion_dashboard||[]).push([[844],{8844:function(n,s,c){c.r(s);c(2791);var e=c(184);s.default=function(){return(0,e.jsx)("div",{children:"Stacked"})}}}]);
+//# sourceMappingURL=844.624c07a5.chunk.js.map

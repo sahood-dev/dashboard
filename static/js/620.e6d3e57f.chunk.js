@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkproject_syncfusion_dashboard=self.webpackChunkproject_syncfusion_dashboard||[]).push([[620],{7025:function(s,a,e){e.r(a);e(2791);var n=e(5222),r=e(184);a.default=function(){return(0,r.jsxs)("div",{className:"m-4 md:m-10 mt-24 p-10 bg-white dark:bg-secondary-dark-bg rounded-3xl",children:[(0,r.jsx)(n.h4,{catogory:"Chart",title:"Infaltion Rate"}),(0,r.jsx)("div",{className:"w-full",children:(0,r.jsx)(n.wW,{})})]})}}}]);
+//# sourceMappingURL=620.e6d3e57f.chunk.js.map

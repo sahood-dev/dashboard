@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/113.5d41f6c6.chunk.js","mappings":"6KAQA,UANqB,WACnB,OACE","sources":["pages/Charts/ColorMapping.jsx"],"sourcesContent":["import React from 'react'\n\nconst ColorMapping = () => {\n  return (\n    <div>ColorMapping</div>\n  )\n}\n\nexport default ColorMapping"],"names":[],"sourceRoot":""}

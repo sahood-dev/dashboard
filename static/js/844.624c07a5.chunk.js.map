@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/844.624c07a5.chunk.js","mappings":"6KAQA,UANgB,WACd,OACE","sources":["pages/Charts/Stacked.jsx"],"sourcesContent":["import React from 'react'\n\nconst Stacked = () => {\n  return (\n    <div>Stacked</div>\n  )\n}\n\nexport default Stacked"],"names":[],"sourceRoot":""}

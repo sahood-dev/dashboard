@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkproject_syncfusion_dashboard=self.webpackChunkproject_syncfusion_dashboard||[]).push([[113],{6113:function(n,s,r){r.r(s);r(2791);var c=r(184);s.default=function(){return(0,c.jsx)("div",{children:"ColorMapping"})}}}]);
+//# sourceMappingURL=113.5d41f6c6.chunk.js.map
